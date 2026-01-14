@@ -12,7 +12,9 @@ public class nested_loops {
 //        oneTwoOneTwo();
 //        numTri();
 //        numPyramid();
-        hollowNumber();
+//        hollowNumber();
+//        contiNum();
+        contiPyramid();
     }
 
     public static void rectPattern(){
@@ -190,6 +192,43 @@ public class nested_loops {
             }
             System.out.println();
         }
+    }
+
+    public static void contiNum(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int n = sc.nextInt();
+        int a = 1;
+
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(a++ +" ");
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+
+    public static void contiPyramid() {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("Enter the number: ");
+//        int n = sc.nextInt();
+        int a = 1;
+        int n = 5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print(a++ +" ");
+            }
+            System.out.println();
+        }
+        System.out.println(a);
+        for(int i=1;i<=n;i++){
+            for( int j = n-1;j>=1;j--){
+                System.out.print(--a + " ");
+            }
+            System.out.println();
+        }
+//        sc.close();
     }
 }
 
