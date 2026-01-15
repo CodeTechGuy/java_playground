@@ -210,25 +210,29 @@ public class nested_loops {
     }
 
     public static void contiPyramid() {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.print("Enter the number: ");
-//        int n = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int n = sc.nextInt();
         int a = 1;
-        int n = 5;
+//        int n = 4;
+        int[] arr = new int[n+1] ;
         for(int i=1;i<=n;i++){
+            arr[i] = a;
             for(int j=1;j<=i;j++){
                 System.out.print(a++ +" ");
             }
             System.out.println();
         }
-        System.out.println(a);
-        for(int i=1;i<=n;i++){
-            for( int j = n-1;j>=1;j--){
-                System.out.print(--a + " ");
+
+        for(int i=n-1;i>=1;i--){
+//            int b = arr[i];
+            int b = (i*(i-1)/2)+1 ;
+            for( int j=1;j<=i;j++){
+                System.out.print(b++ + " ");
             }
             System.out.println();
         }
-//        sc.close();
+        sc.close();
     }
 }
 
