@@ -14,7 +14,8 @@ public class nested_loops {
 //        numPyramid();
 //        hollowNumber();
 //        contiNum();
-        contiPyramid();
+//        contiPyramid();
+        sumOfDigits();
     }
 
     public static void rectPattern(){
@@ -232,6 +233,22 @@ public class nested_loops {
             }
             System.out.println();
         }
+        sc.close();
+    }
+
+
+
+    public static void sumOfDigits() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the num to sum digits: ");
+        int num = sc.nextInt();
+        int sum = 0;
+        while(num>0){
+            sum += num%10;
+            num = num/10;
+        }
+        System.out.println(sum);
+
         sc.close();
     }
 }
