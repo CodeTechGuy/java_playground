@@ -251,6 +251,23 @@ public class nested_loops {
 
         sc.close();
     }
+
+    public static void sumOfDigits2() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the num to sum digits: ");
+        int num = sc.nextInt();
+        int sum = 0;
+
+        for(;num>0;){
+            sum += num%10;
+            num = num/10;
+        }
+        System.out.println(sum);
+
+        sc.close();
+    }
+
+    
 }
 
 
