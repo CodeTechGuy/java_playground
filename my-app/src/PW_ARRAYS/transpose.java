@@ -31,7 +31,7 @@ public class transpose {
         int[][] ans = new int[r][c];
 
         for(int i=0;i<r ;i++){
-            for(int j=0 ; j<c ; j++){
+            for(int j=i ; j<c ; j++){
                 int temp = matrix[i][j];
                 matrix[i][j] = ans[j][i];
                 ans[j][i] = temp;
