@@ -8,7 +8,6 @@ class Main {
                 {3,1,2}
         };
 
-        int n = arr1.length;
 
         int r1 = 2;
         int c1 = 3;
