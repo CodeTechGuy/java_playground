@@ -25,6 +25,18 @@ public class transpose {
 
             System.out.println(Arrays.deepToString(arr1));
             System.out.println(Arrays.deepToString(ans));
+    }
+
+    static void transposeInPlace(int [][] matrix , int r , int c){
+        int[][] ans = new int[r][c];
+
+        for(int i=0;i<r ;i++){
+            for(int j=0 ; j<c ; j++){
+                int temp = matrix[i][j];
+                matrix[i][j] = ans[j][i];
+                ans[j][i] = temp;
+            }
         }
+    }
 
 }
