@@ -3,6 +3,9 @@ package Strings;
 public class palindromeChecker {
     public static void main(String[] args) {
         System.out.println(palindrome("svh"));
+        System.out.println(palindrome("abcba"));
+        System.out.println(palindrome("svmmvs"));
+
     }
 
     public static boolean palindrome(String str){
